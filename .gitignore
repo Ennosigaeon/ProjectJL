@@ -253,7 +253,7 @@ paket-files/
 
 
 # add unity filter
-# unity_*/[Ll]ibrary/
+unity_*/[Ll]ibrary/
 unity_*/[Tt]emp/
 # unity_*/[Oo]bj/
 # unity_*/[Bb]uild/
