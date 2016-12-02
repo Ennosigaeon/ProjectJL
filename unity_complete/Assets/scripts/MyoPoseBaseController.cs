@@ -10,6 +10,16 @@ public abstract class MyoPoseBaseController : MonoBehaviour {
     public float maxStrechFactor = 2.5f;
     public KeyCode resetKey = KeyCode.Space;
 
+	//==
+	public delegate void MyoAction();
+	public static event MyoAction onDoubleTap;
+	public static event MyoAction onFingerSpread;
+	public static event MyoAction onFist;
+	public static event MyoAction onRest;
+	public static event MyoAction onWaveIn;
+	public static event MyoAction onWaveOut;
+
+
     public float speed = 1f;
     public bool updateOnChange = false;
     public float maxOffset = 2f;
@@ -45,44 +55,40 @@ public abstract class MyoPoseBaseController : MonoBehaviour {
         lastPose = pose;
 
         switch (pose) {
-            case Pose.DoubleTap:
-                onDoubleTap();
-                break;
-            case Pose.FingersSpread:
-                onFingerSpread();
-                break;
+			case Pose.DoubleTap:
+			//onDoubleTap ();
+				if (onDoubleTap != null) {
+					onDoubleTap();
+				}
+            	break;
+           	case Pose.FingersSpread:
+            	if (onDoubleTap != null) {
+					onDoubleTap();
+				}
+				break;
             case Pose.Fist:
-                onFist();
-                break;
+				if (onDoubleTap != null) {
+					onDoubleTap();
+				}
+            	break;
             case Pose.Rest:
-                onRest();
-                break;
+				if (onDoubleTap != null) {
+					onDoubleTap();
+				}
+            	break;
             case Pose.Unknown:
                 onUnknown();
-                break;
+            	break;
             case Pose.WaveIn:
-                onWaveIn();
+				if (onDoubleTap != null) {
+					onDoubleTap();
+				}
                 break;
             case Pose.WaveOut:
-                onWaveOut();
-                break;
+				if (onDoubleTap != null) {
+					onDoubleTap();
+				}
+            	break;
         }
     }
-
-    protected abstract void reset();
-
-    protected abstract void onDoubleTap();
-
-    protected abstract void onFingerSpread();
-
-    protected abstract void onFist();
-
-    protected abstract void onRest();
-
-    protected abstract void onUnknown();
-
-    protected abstract void onWaveIn();
-
-    protected abstract void onWaveOut();
-
 }
