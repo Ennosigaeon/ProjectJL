@@ -1,0 +1,363 @@
+Mono path[0] = 'C:/Users/Marc/Documents/Hackvention/Myo Demo/test_Data/Managed'
+Mono path[1] = 'C:/Users/Marc/Documents/Hackvention/Myo Demo/test_Data/Mono'
+Mono config path = 'C:/Users/Marc/Documents/Hackvention/Myo Demo/test_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Marc/Documents/Hackvention/Myo Demo/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55293
+Multi-casting "[IP] 10.9.9.5 [Port] 55293 [Flags] 2 [Guid] 1379603053 [EditorId] 2330074445 [Version] 1048832 [Id] WindowsPlayer(Marc-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [10.9.9.5:55293]
+Initialize engine version: 5.4.3f1 (01f4c123905a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     880 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.188 seconds
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.252090 ms
+Myo Pose Controller start
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Start() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:22)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 22)
+
+Myo Orientation Controller start
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoOrientationController:Start() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoOrientationController.cs:14)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoOrientationController.cs Line: 14)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1d04 -> priority: 1 
+Pose: Fist
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: FingersSpread
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: WaveIn
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: WaveOut
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: WaveOut
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Fist
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: WaveIn
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Fist
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: WaveIn
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: WaveIn
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: FingersSpread
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Rest
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Pose: Unknown
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+MyoPoseController:Update() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:44)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 44)
+
+Resetting unlock behaviour.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MyoPoseController:OnApplicationQuit() (at C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:30)
+ 
+(Filename: C:/Users/Marc/Documents/Hackvention/Myo Demo/assets/Scripts/MyoPoseController.cs Line: 30)
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;C:\Users\Marc\Documents\Hackvention\Myo Demo;C:\Users\Marc\Documents\Hackvention\Myo Demo;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Marc'
+OS-Version: 6.1.7601 (Service Pack 1) 0x300-0x1
+C:\Users\Marc\Documents\Hackvention\Myo Demo\test.exe:test.exe (000000013F930000), size: 25346048 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Marc\Documents\Hackvention\Myo Demo\test.exe', fileVersion: 5.4.3.62657
+C:\Windows\SYSTEM32\ntdll.dll:ntdll.dll (0000000077A10000), size: 1744896 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\ntdll.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\kernel32.dll:kernel32.dll (00000000778F0000), size: 1175552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\kernel32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\KERNELBASE.dll:KERNELBASE.dll (000007FEFD9C0000), size: 434176 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\KERNELBASE.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\HID.DLL:HID.DLL (000007FEFB5C0000), size: 45056 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\HID.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\msvcrt.dll:msvcrt.dll (000007FEFFC80000), size: 651264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\msvcrt.dll', fileVersion: 7.0.7601.23403
+C:\Windows\system32\GDI32.dll:GDI32.dll (000007FEFEC60000), size: 421888 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GDI32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\USER32.dll:USER32.dll (00000000777F0000), size: 1024000 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\USER32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\LPK.dll:LPK.dll (000007FEFFC70000), size: 57344 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\LPK.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\USP10.dll:USP10.dll (000007FEFEAB0000), size: 827392 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\USP10.dll', fileVersion: 1.626.7601.23403
+C:\Windows\system32\ADVAPI32.dll:ADVAPI32.dll (000007FEFECD0000), size: 897024 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\ADVAPI32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\SYSTEM32\sechost.dll:sechost.dll (000007FEFEDB0000), size: 126976 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\sechost.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\RPCRT4.dll:RPCRT4.dll (000007FEFF8D0000), size: 1232896 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\RPCRT4.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\WS2_32.dll:WS2_32.dll (000007FEFF360000), size: 315392 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WS2_32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\NSI.dll:NSI.dll (000007FEFFA00000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\NSI.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\VERSION.dll:VERSION.dll (000007FEFCA70000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\VERSION.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\ole32.dll:ole32.dll (000007FEFF040000), size: 2109440 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\ole32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\SHLWAPI.dll:SHLWAPI.dll (000007FEFEBE0000), size: 462848 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\SHLWAPI.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\PSAPI.DLL:PSAPI.DLL (0000000077BE0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\PSAPI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\SHELL32.dll:SHELL32.dll (000007FEFDD20000), size: 14204928 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\SHELL32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (000007FEEAB70000), size: 1167360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OPENGL32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\GLU32.dll:GLU32.dll (000007FEF3400000), size: 184320 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GLU32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\DDRAW.dll:DDRAW.dll (000007FEEA8E0000), size: 987136 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DDRAW.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (000007FEFBF50000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DCIMAN32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\SETUPAPI.dll:SETUPAPI.dll (000007FEFF510000), size: 1929216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\SETUPAPI.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\CFGMGR32.dll:CFGMGR32.dll (000007FEFDB70000), size: 221184 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\CFGMGR32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\OLEAUT32.dll:OLEAUT32.dll (000007FEFEDD0000), size: 884736 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OLEAUT32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\DEVOBJ.dll:DEVOBJ.dll (000007FEFDAD0000), size: 106496 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DEVOBJ.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\dwmapi.dll:dwmapi.dll (000007FEFB560000), size: 98304 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dwmapi.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\WINMM.dll:WINMM.dll (000007FEF9830000), size: 241664 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINMM.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\IMM32.dll:IMM32.dll (000007FEFF4E0000), size: 188416 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IMM32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\MSCTF.dll:MSCTF.dll (000007FEFF250000), size: 1085440 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSCTF.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\DNSAPI.dll:DNSAPI.dll (000007FEFD000000), size: 372736 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DNSAPI.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (000007FEFBA70000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IPHLPAPI.DLL', fileVersion: 6.1.7601.23403
+C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (000007FEFBA60000), size: 45056 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINNSI.DLL', fileVersion: 6.1.7601.23403
+C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (000007FEF7F80000), size: 462848 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINHTTP.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\webio.dll:webio.dll (000007FEF7F10000), size: 413696 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\system32\webio.dll', fileVersion: 6.1.7601.23403
+C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Mono\mono.dll:mono.dll (000007FEE10C0000), size: 2994176 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Mono\mono.dll', fileVersion: 1.0.0.1
+C:\Windows\system32\MSWSOCK.dll:MSWSOCK.dll (000007FEFD180000), size: 348160 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSWSOCK.dll', fileVersion: 6.1.7601.23403
+C:\Windows\System32\wshtcpip.dll:wshtcpip.dll (000007FEFCB40000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\wshtcpip.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (000007FEFB540000), size: 69632 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dhcpcsvc6.DLL', fileVersion: 6.1.7601.23403
+C:\Windows\system32\dhcpcsvc.DLL:dhcpcsvc.DLL (000007FEFB6E0000), size: 98304 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dhcpcsvc.DLL', fileVersion: 6.1.7601.23403
+C:\Windows\system32\NLAapi.dll:NLAapi.dll (000007FEFC1E0000), size: 86016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\NLAapi.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\napinsp.dll:napinsp.dll (000007FEF33B0000), size: 86016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\napinsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\pnrpnsp.dll:pnrpnsp.dll (000007FEF32B0000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\pnrpnsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\winrnr.dll:winrnr.dll (000007FEF5BC0000), size: 45056 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\winrnr.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\CRYPTBASE.dll:CRYPTBASE.dll (000007FEFD840000), size: 61440 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\CRYPTBASE.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (000007FEFBED0000), size: 352256 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\d3d11.dll:d3d11.dll (000007FEE5C40000), size: 811008 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d11.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\dxgi.dll:dxgi.dll (000007FEF82F0000), size: 684032 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dxgi.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WINTRUST.dll:WINTRUST.dll (000007FEFDAF0000), size: 241664 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINTRUST.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\CRYPT32.dll:CRYPT32.dll (000007FEFDBB0000), size: 1495040 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\CRYPT32.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\MSASN1.dll:MSASN1.dll (000007FEFD9B0000), size: 61440 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSASN1.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\igd10umd64.dll:igd10umd64.dll (000007FEF5F20000), size: 9969664 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\igd10umd64.dll', fileVersion: 8.15.10.2696
+C:\Windows\system32\CLBCatQ.DLL:CLBCatQ.DLL (000007FEFF830000), size: 626688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\CLBCatQ.DLL', fileVersion: 2001.12.8531.23403
+C:\Windows\System32\MMDevApi.dll:MMDevApi.dll (000007FEFC590000), size: 307200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\MMDevApi.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\PROPSYS.dll:PROPSYS.dll (000007FEFC460000), size: 1228800 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\PROPSYS.dll', fileVersion: 7.0.7601.23403
+C:\Windows\system32\wdmaud.drv:wdmaud.drv (000007FEF53C0000), size: 241664 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\wdmaud.drv', fileVersion: 6.1.7601.23403
+C:\Windows\system32\ksuser.dll:ksuser.dll (00000000715D0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\ksuser.dll', fileVersion: 6.1.7601.23403
+C:\Windows\system32\AVRT.dll:AVRT.dll (000007FEFC610000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AVRT.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\AUDIOSES.DLL:AUDIOSES.DLL (000007FEF5370000), size: 323584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AUDIOSES.DLL', fileVersion: 6.1.7601.23403
+C:\Windows\system32\msacm32.drv:msacm32.drv (000007FEF5080000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\msacm32.drv', fileVersion: 6.1.7600.16385
+C:\Windows\system32\MSACM32.dll:MSACM32.dll (000007FEF5060000), size: 98304 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSACM32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\midimap.dll:midimap.dll (000007FEF4FD0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\midimap.dll', fileVersion: 6.1.7600.16385
+C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.23403_none_e36ad4593102f066\comctl32.dll:comctl32.dll (000007FEFBFE0000), size: 2048000 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.23403_none_e36ad4593102f066\comctl32.dll', fileVersion: 6.10.7601.23403
+C:\Windows\system32\xinput9_1_0.dll:xinput9_1_0.dll (000007FEF37A0000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\xinput9_1_0.dll', fileVersion: 6.1.7600.16385
+C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Plugins\myo.dll:myo.dll (000007FEE0E80000), size: 1175552 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Marc\Documents\Hackvention\Myo Demo\test_Data\Plugins\myo.dll'
+C:\Windows\system32\dbghelp.dll:dbghelp.dll (000007FEF8F10000), size: 1200128 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dbghelp.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\SspiCli.dll:SspiCli.dll (000007FEFD7B0000), size: 151552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\SspiCli.dll', fileVersion: 6.1.7601.23403
+
+========== OUTPUTING STACK TRACE ==================
+
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 000007FEE0EDDE5A)
+0x000007FEE0EDDE5A (myo) 
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 000007FEE0EE0B80)
+0x000007FEE0EE0B80 (myo) 
+0x000007FEE0EE459D (myo) libmyo_myo_unlock
+0x0000000005877578 (Mono JIT Code) (wrapper managed-to-native) Thalmic.Myo.libmyo:myo_unlock (intptr,Thalmic.Myo.libmyo/UnlockType,intptr)
+0x00000000058774CF (Mono JIT Code) [C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\myo\Scripts\Myo.NET\Myo.cs:66] Thalmic.Myo.Myo:Unlock (Thalmic.Myo.UnlockType) 
+0x0000000005877472 (Mono JIT Code) [C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\myo\Scripts\ThalmicMyo.cs:54] ThalmicMyo:Unlock (Thalmic.Myo.UnlockType) 
+0x00000000058773B7 (Mono JIT Code) [C:\Users\Marc\Documents\Hackvention\Myo Demo\assets\Scripts\MyoPoseController.cs:31] MyoPoseController:OnApplicationQuit () 
+0x000000000584704B (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x000007FEE11E539F (mono) mono_set_defaults
+0x000007FEE1138385 (mono) mono_runtime_invoke
+0x000000013FCB0C8F (test) ScriptingArguments::AddString
+0x000000013FBBA145 (test) ReportScriptingObjectsTransfer::ReportScriptingObject
+0x000000013F9684ED (test) GameObject::SendMessageAny
+0x000000013FC56F41 (test) SmartResetObject
+0x000000013FC7ADE2 (test) CreateMemLabel
+0x000000013FC7AF33 (test) CreateMemLabel
+0x000000013FDAC364 (test) PlayerMainWndProc
+0x0000000077809C21 (USER32) TranslateMessageEx
+0x0000000077807307 (USER32) SetWindowTextW
+0x0000000077806839 (USER32) IsDialogMessageW
+0x0000000077A5BA75 (ntdll) KiUserCallbackDispatcher
+0x000000007780686A (USER32) IsDialogMessageW
+0x00000000778068B2 (USER32) IsDialogMessageW
+0x000000007780764A (USER32) SetWindowTextW
+0x000007FEFBED795A (uxtheme) DrawThemeParentBackground
+0x000007FEFBEF638A (uxtheme) Ordinal69
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 000007FEFBED168E)
+0x000007FEFBED168E (uxtheme) 
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 000007FEFBED1445)
+0x000007FEFBED1445 (uxtheme) 
+0x0000000077808A07 (USER32) GetWindowDC
+0x000000013FDAC5AC (test) PlayerMainWndProc
+0x00000000778089A5 (USER32) GetWindowDC
+0x000000007780993A (USER32) TranslateMessage
+0x000000013FAD64F4 (test) operator new
+0x000000013FDABD98 (test) IntermediateRenderer::GetLayer
+0x000000013FDB02DC (test) PlayerWinMain
+0x00000001402EFBCC (test) UserListBase::GetTarget
+0x00000000779059BD (kernel32) BaseThreadInitThunk
+
+========== END OF STACKTRACE ===========
+
+**** Crash! ****
