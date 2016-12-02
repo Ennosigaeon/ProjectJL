@@ -4,11 +4,17 @@ using Windows.Kinect;
 using System;
 
 
-public class detect_skeleton : MonoBehaviour {
+public class DetectSkeleton : MonoBehaviour {
 
     public GameObject BodySrcManager;
 
     public float scalingFactor;
+
+
+    public Transform rightHandObj = null;
+    public Transform leftHandObj = null;
+    public Transform leftFootObj = null;
+    public Transform rightFootObj = null;
 
     // Default variable for source manager. Takes care of connection to kinect.
     private BodySourceManager b_src_man;
