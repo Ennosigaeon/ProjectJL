@@ -3,10 +3,13 @@ using System.Collections;
 
 public class interactableObject : MonoBehaviour
 {
+	private GameObject body;
     private bool isTouched = false;
 
     void OnEnable()
     {
+		//TODO find body
+		body = (""); 
         MyoPoseBaseController.onDoubleTap += doOnDoubleTap;
         MyoPoseBaseController.onFingerSpread += doOnFingerSpread;
         MyoPoseBaseController.onFist += doOnFist;
@@ -25,9 +28,12 @@ public class interactableObject : MonoBehaviour
     {
         Debug.Log("FingerSpread detected with " + this.gameObject);
         this.gameObject.transform.SetParent(null);
+		this.gameObject.GetComponent<Rigidbody> ().isKinematic = false;
+
+		tossObject (this.gameObject.GetComponent<Rigidbody> ());
         //		this.attachedRigidbody.isKinematic = false;
         //TODO body als richtiges Argument uebergeben
-        //		tossObject(this.attachedRigidbody, body.gameObject);
+        //		tossObject(this.attachedRigidbody);
     }
 
     void doOnFist(GameObject body)
@@ -35,6 +41,8 @@ public class interactableObject : MonoBehaviour
         Debug.Log("Fist detected with " + this.gameObject);
         if (isTouched)
         {
+			this.gameObject.GetComponent<Rigidbody> ().isKinematic = true;
+			this.gameObject.transform.SetParent(body.gameObject.transform);
             //			this.attachedRigidbody.isKinematic = true;
             //			this.gameObject.transform.SetParent(body.gameObject.transform);
             //TODO hier Element neu erzeugen oder durch andere Geste?
@@ -61,6 +69,18 @@ public class interactableObject : MonoBehaviour
     }
 
 
+	void OnCollisionEnter(Collider other){
+		if (other.gameObject == body) {
+			isTouched = true;
+		}
+	}
+
+	void OnCollisionExit(Collider other){
+		if (other.gameObject == body) {
+			isTouched = false;
+		}
+	}
+
     /*	void OnTriggerStay(Collider col)
         {
             Debug.Log("Collision with " + col.name + " and activated OnTriggerStay");
@@ -85,7 +105,7 @@ public class interactableObject : MonoBehaviour
         }
     */
 
-    private void tossObject(Rigidbody rigidbody, GameObject parent)
+    private void tossObject(Rigidbody rigidbody)
     {
         /*		Transform origin = parent.origin ? parent.origin : parent.transform.parent;
                 if(origin != null)
