@@ -15,7 +15,6 @@ public class follow : MonoBehaviour
     public Transform leftFootObj = null;
     public Transform rightFootObj = null;
     public Transform lookObj = null;
-    public Camera camera = null;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -67,7 +66,6 @@ public class follow : MonoBehaviour
                     animator.SetIKPosition(AvatarIKGoal.LeftFoot, leftFootObj.position);
                     animator.SetIKRotation(AvatarIKGoal.LeftFoot, leftFootObj.rotation);
                 }
-                camera.
             }
 
             //if the IK is not active, set the position and rotation of the hand and head back to the original position
