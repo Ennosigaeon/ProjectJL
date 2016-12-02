@@ -2,7 +2,7 @@
 using Pose = Thalmic.Myo.Pose;
 using UnlockType = Thalmic.Myo.UnlockType;
 
-public class MyoPoseController : MonoBehaviour {
+public abstract class MyoPoseBaseController : MonoBehaviour {
 
     public GameObject myoGameObject = null;
     public float strechFactor = 1f;
@@ -69,28 +69,20 @@ public class MyoPoseController : MonoBehaviour {
         }
     }
 
-    protected void reset() {
-    }
+    protected abstract void reset();
 
-    protected void onDoubleTap() {
-    }
+    protected abstract void onDoubleTap();
 
-    protected void onFingerSpread() {
-    }
+    protected abstract void onFingerSpread();
 
-    protected void onFist() {
-    }
+    protected abstract void onFist();
 
-    protected void onRest() {
-    }
+    protected abstract void onRest();
 
-    protected void onUnknown() {
-    }
+    protected abstract void onUnknown();
 
-    protected void onWaveIn() {
-    }
+    protected abstract void onWaveIn();
 
-    protected void onWaveOut() {
-    }
+    protected abstract void onWaveOut();
 
 }
