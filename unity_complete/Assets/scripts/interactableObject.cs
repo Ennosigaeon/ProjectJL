@@ -3,15 +3,11 @@ using System.Collections;
 
 public class InteractableObject : MonoBehaviour
 {
-	private GameObject body;
+	public GameObject body = null;
     private bool isTouched = false;
 
     void OnEnable()
     {
-<<<<<<< HEAD
-		//TODO find body
-		body = (""); 
-=======
         MyoPoseController.onDoubleTap += doOnDoubleTap;
         MyoPoseController.onFingerSpread += doOnFingerSpread;
         MyoPoseController.onFist += doOnFist;
@@ -71,13 +67,13 @@ public class InteractableObject : MonoBehaviour
     }
 
 
-	void OnCollisionEnter(Collider other){
+	void OnCollisionEnter(Collision other){
 		if (other.gameObject == body) {
 			isTouched = true;
 		}
 	}
 
-	void OnCollisionExit(Collider other){
+	void OnCollisionExit(Collision other){
 		if (other.gameObject == body) {
 			isTouched = false;
 		}
