@@ -4,7 +4,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Animator))]
 
-public class follow : MonoBehaviour
+public class MotionModel : MonoBehaviour
 {
 
     protected Animator animator;

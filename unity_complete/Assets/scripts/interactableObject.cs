@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class interactableObject : MonoBehaviour
+public class InteractableObject : MonoBehaviour
 {
     private bool isTouched = false;
 
     void OnEnable()
     {
-        MyoPoseBaseController.onDoubleTap += doOnDoubleTap;
-        MyoPoseBaseController.onFingerSpread += doOnFingerSpread;
-        MyoPoseBaseController.onFist += doOnFist;
-        MyoPoseBaseController.onRest += doOnRest;
-        MyoPoseBaseController.onWaveIn += doOnWaveIn;
-        MyoPoseBaseController.onWaveOut += doOnWaveOut;
+        MyoPoseController.onDoubleTap += doOnDoubleTap;
+        MyoPoseController.onFingerSpread += doOnFingerSpread;
+        MyoPoseController.onFist += doOnFist;
+        MyoPoseController.onRest += doOnRest;
+        MyoPoseController.onWaveIn += doOnWaveIn;
+        MyoPoseController.onWaveOut += doOnWaveOut;
     }
 
     void doOnDoubleTap(GameObject body)

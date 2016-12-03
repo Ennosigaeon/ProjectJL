@@ -2,7 +2,7 @@
 using Pose = Thalmic.Myo.Pose;
 using UnlockType = Thalmic.Myo.UnlockType;
 
-public abstract class MyoPoseBaseController : MonoBehaviour {
+public abstract class MyoPoseController : MonoBehaviour {
 
     public GameObject myoGameObject = null;
     public float strechFactor = 1f;
