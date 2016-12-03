@@ -26,6 +26,8 @@ public class DetectSkeleton : MonoBehaviour
     private Dictionary<JointType, SlidingWindow> sliders;
     // Use this to hold the scale. Set Once.
     Vector3 scal_overall_v = Vector3.zero;
+    // Use a vector for the initial kinect hip position
+    Vector3 initial_hip_k = Vector3.zero;
     // Globla Array to hold sliding window frame.
     private SlidingWindow sliding_window;
 
@@ -83,8 +85,13 @@ public class DetectSkeleton : MonoBehaviour
             }
 
             // Compute scale only upon first frame with actual numbers:
-            if (scal_overall_v == Vector3.zero && cameraSpacePointtoVector(body.Joints[JointType.Head].Position) != Vector3.zero && cameraSpacePointtoVector(body.Joints[JointType.AnkleRight].Position) != Vector3.zero)
+            if (scal_overall_v == Vector3.zero &&
+                cameraSpacePointtoVector(body.Joints[JointType.Head].Position) != Vector3.zero &&
+                cameraSpacePointtoVector(body.Joints[JointType.AnkleRight].Position) != Vector3.zero &&
+                cameraSpacePointtoVector(body.Joints[JointType.HipLeft].Position) != Vector3.zero &&
+                cameraSpacePointtoVector(body.Joints[JointType.HipRight].Position) != Vector3.zero)
             {
+                Debug.Log("Inital Setup");
                 // MAGIC NUMBER
                 float scal_avatar = 7.5f;
                 float scal_kinect = body.Joints[JointType.Head].Position.Y - body.Joints[JointType.AnkleRight].Position.Y;
@@ -92,18 +99,34 @@ public class DetectSkeleton : MonoBehaviour
                 // Compute scale from kinect coordiante system to unity coordiante system.
                 float scal_overall = scal_avatar / scal_kinect;
                 scal_overall_v = new Vector3(scal_overall, scal_overall, -scal_overall);
+
+                initial_hip_k = new Vector3(
+                    (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2,
+                    (body.Joints[JointType.HipLeft].Position.Y + body.Joints[JointType.HipRight].Position.Y) / 2,
+                    (body.Joints[JointType.HipLeft].Position.Z + body.Joints[JointType.HipRight].Position.Z) / 2
+                    );
             }
             else if (scal_overall_v == Vector3.zero)
             {
                 continue;
             }
-
+            
             // Get the coordinate for the Hip form the kinect
             var hip_coordinates_k = new Vector3(
                 (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2,
                 (body.Joints[JointType.HipLeft].Position.Y + body.Joints[JointType.HipRight].Position.Y) / 2,
                 (body.Joints[JointType.HipLeft].Position.Z + body.Joints[JointType.HipRight].Position.Z) / 2
                 );
+
+            // First, re-compute the position of the hip and move avatar
+            if (hip_coordinates_k == Vector3.zero)
+            {
+                continue;
+            }
+            GameObject.Find("female").transform.position =  hip_coordinates_k - initial_hip_k;
+            Debug.Log(hip_coordinates_k - initial_hip_k);
+            Debug.Log("Pure kinrect: " + hip_coordinates_k);
+
             // Get the coordinate for the Hip from unity
             var hip_coordinates_u = new Vector3(
                 GameObject.Find("hips").transform.position.x,
