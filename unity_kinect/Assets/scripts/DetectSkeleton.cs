@@ -21,8 +21,10 @@ public class DetectSkeleton : MonoBehaviour {
     private BodySourceManager b_src_man;
     // Field for all bodies. Gets field by each frame of the kinect.
     private Body[] bodies;
-
+    // This holds the JointTypes and the according game objects for the Inverse Kinematics.
     private Dictionary<JointType,Transform> descriptors;
+    // Use this to hold the scale. Set Once.
+    Vector3 scal_overall_v = Vector3.zero;
 
     // Use this for initialization
     void Start () {
@@ -34,8 +36,8 @@ public class DetectSkeleton : MonoBehaviour {
             {
                 {JointType.WristRight, rightHandObj },
                 {JointType.WristLeft, leftHandObj },
-                {JointType.FootRight, rightFootObj },
-                {JointType.FootLeft, leftFootObj }
+                {JointType.AnkleRight, rightFootObj },
+                {JointType.AnkleLeft, leftFootObj }
             };
 
     }
@@ -64,13 +66,22 @@ public class DetectSkeleton : MonoBehaviour {
             {
                 continue;
             }
-            // MAGIC NUMBER
-            float scal_avatar = 7.5f;
-            float scal_kinect = body.Joints[JointType.Head].Position.Y - body.Joints[JointType.FootRight].Position.Y;
 
-            // Compute scale from kinect coordiante system to unity coordiante system.
-            float scal_overall = scal_avatar / scal_kinect;
-            Vector3 scal_overall_v = new Vector3( scal_overall, scal_overall, -scal_overall);
+            // Compute scale only upon first frame with actual numbers:
+            if (scal_overall_v == Vector3.zero && cameraSpacePointtoVector(body.Joints[JointType.Head].Position) != Vector3.zero && cameraSpacePointtoVector(body.Joints[JointType.AnkleRight].Position) != Vector3.zero)
+            {
+                // MAGIC NUMBER
+                float scal_avatar = 7.5f;
+                float scal_kinect = body.Joints[JointType.Head].Position.Y - body.Joints[JointType.AnkleRight].Position.Y;
+
+                // Compute scale from kinect coordiante system to unity coordiante system.
+                float scal_overall = scal_avatar / scal_kinect;
+                scal_overall_v = new Vector3(scal_overall, scal_overall, -scal_overall);
+            } else if (scal_overall_v == Vector3.zero)
+            {
+                continue;
+            }
+            
             // Get the coordinate for the Hip form the kinect
             var hip_coordinates_k = new Vector3(
                 (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2,
@@ -116,5 +127,10 @@ public class DetectSkeleton : MonoBehaviour {
             one.x * two.x,
             one.y * two.y,
             one.z * two.z);
+    }
+
+    private Vector3 cameraSpacePointtoVector(CameraSpacePoint pos)
+    {
+        return new Vector3(pos.X, pos.Y, pos.Z);
     }
 }
