@@ -5,12 +5,12 @@ using System;
 using System.Collections.Generic;
 
 
-public class DetectSkeleton : MonoBehaviour {
+public class DetectSkeleton : MonoBehaviour
+{
 
     public GameObject BodySrcManager;
 
-    public float scalingFactor;
-
+    public int sliding_window_size;
 
     public Transform rightHandObj = null;
     public Transform leftHandObj = null;
@@ -22,12 +22,17 @@ public class DetectSkeleton : MonoBehaviour {
     // Field for all bodies. Gets field by each frame of the kinect.
     private Body[] bodies;
     // This holds the JointTypes and the according game objects for the Inverse Kinematics.
-    private Dictionary<JointType,Transform> descriptors;
+    private Dictionary<JointType, Transform> descriptors;
+    private Dictionary<JointType, SlidingWindow> sliders;
     // Use this to hold the scale. Set Once.
     Vector3 scal_overall_v = Vector3.zero;
+    // Globla Array to hold sliding window frame.
+    private SlidingWindow sliding_window;
+
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
         // get the default body source manager
         b_src_man = BodySrcManager.GetComponent<BodySourceManager>();
@@ -40,8 +45,18 @@ public class DetectSkeleton : MonoBehaviour {
                 {JointType.AnkleLeft, leftFootObj }
             };
 
+        sliders = new Dictionary<JointType, SlidingWindow>()
+            {
+                {JointType.WristRight, new SlidingWindow(sliding_window_size) },
+                {JointType.WristLeft, new SlidingWindow(sliding_window_size) },
+                {JointType.AnkleRight, new SlidingWindow(sliding_window_size) },
+                {JointType.AnkleLeft, new SlidingWindow(sliding_window_size) }
+            };
+
+        sliding_window = new SlidingWindow(sliding_window_size);
+
     }
-    
+
 
     // Update is called once per frame
     void Update()
@@ -61,7 +76,7 @@ public class DetectSkeleton : MonoBehaviour {
 
         foreach (var body in bodies)
         {
-            
+
             if (body == null)
             {
                 continue;
@@ -77,11 +92,12 @@ public class DetectSkeleton : MonoBehaviour {
                 // Compute scale from kinect coordiante system to unity coordiante system.
                 float scal_overall = scal_avatar / scal_kinect;
                 scal_overall_v = new Vector3(scal_overall, scal_overall, -scal_overall);
-            } else if (scal_overall_v == Vector3.zero)
+            }
+            else if (scal_overall_v == Vector3.zero)
             {
                 continue;
             }
-            
+
             // Get the coordinate for the Hip form the kinect
             var hip_coordinates_k = new Vector3(
                 (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2,
@@ -101,10 +117,10 @@ public class DetectSkeleton : MonoBehaviour {
                 var p_k = body.Joints[pair.Key].Position;
                 var coordinates_k = new Vector3(p_k.X, p_k.Y, p_k.Z);
                 // if there are no new frames, continue
-                if ( coordinates_k == Vector3.zero)
+                if (coordinates_k == Vector3.zero)
                 {
                     continue;
-                } 
+                }
                 else
                 {
                     // THIS IS WHERE THE MAGIC HAPPENS!
@@ -112,8 +128,11 @@ public class DetectSkeleton : MonoBehaviour {
                      * We simply use the body scale from unity and map the distance vector from kinect_hip to kinect_hand positions
                      * and add this vector to the unity hip position.
                      * Easy as fuck.
-                     */ 
-                    pair.Value.transform.position = hip_coordinates_u + vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k));
+                     */
+                    //sliders[pair.Key].push(coordinates_k);
+                    sliders[pair.Key].push(hip_coordinates_u + vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k)));
+                    //pair.Value.transform.position = hip_coordinates_u + vec3_multiply(scal_overall_v, (sliders[pair.Key].pop() - hip_coordinates_k));
+                    pair.Value.transform.position = sliders[pair.Key].pop();
                 }
 
 
