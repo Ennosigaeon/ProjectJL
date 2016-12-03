@@ -22,54 +22,47 @@ public class InteractableObject : MonoBehaviour
 
     void doOnDoubleTap(GameObject body)
     {
-        Debug.Log("DoubleTab detected with " + this.gameObject);
-
     }
 
     void doOnFingerSpread(GameObject body)
     {
-        Debug.Log("FingerSpread detected with " + this.gameObject);
         resetTransform();
-       
     }
 
     void doOnFist(GameObject body)
     {
-        Debug.Log("Fist detected with " + this.gameObject);
         grabObject();
-
     }
 
     void doOnRest(GameObject body)
     {
-        Debug.Log("Rest detected with " + this.gameObject);
-
     }
 
     void doOnWaveIn(GameObject body)
     {
         swingInObject();
-        Debug.Log("WaveIn detected with " + this.gameObject);
     }
 
     void doOnWaveOut(GameObject body)
     {
         swingOutObject(body);
-        Debug.Log("WaveOut detected with " + this.gameObject);
     }
 
 
 	void OnCollisionEnter(Collision other){
-		if (other.gameObject == body) {
+        //if (other.gameObject == body) {
+            Debug.Log("Touch");
 			isTouched = true;
-		}
+        grabObject();
+		//}
 	}
 
 	void OnCollisionExit(Collision other){
-		if (other.gameObject == body) {
+		//if (other.gameObject == body) {
 			isTouched = false;
-		}
-	}
+            Debug.Log("Untouch");
+        //}
+    }
 
     /*	void OnTriggerStay(Collider col)
         {
@@ -118,6 +111,7 @@ public class InteractableObject : MonoBehaviour
         if (isTouched)
         {
             isGrabbed = true;
+            Debug.Log("Grabbed object");
             this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             this.gameObject.transform.SetParent(body.gameObject.transform);
             
@@ -160,7 +154,6 @@ public class InteractableObject : MonoBehaviour
     {
         this.transform.position = originalPosition.position;
         this.transform.rotation = originalPosition.rotation;
-
     }
 
 }
