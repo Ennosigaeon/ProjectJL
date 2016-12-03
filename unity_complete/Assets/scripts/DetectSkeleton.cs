@@ -20,6 +20,7 @@ public class DetectSkeleton : MonoBehaviour
     public Transform leftKneeObj = null;
     public Transform rightElbowObj = null;
     public Transform leftElbowObj = null;
+    
 
     // Default variable for source manager. Takes care of connection to kinect.
     private BodySourceManager b_src_man;
@@ -129,8 +130,8 @@ public class DetectSkeleton : MonoBehaviour
             if (hip_coordinates_k == Vector3.zero)
             {
                 continue;
-            }
-            GameObject.Find("female").transform.position =  hip_coordinates_k - initial_hip_k;
+            } // vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k))
+            GameObject.Find("female").transform.position = vec3_multiply(scal_overall_v, (hip_coordinates_k - initial_hip_k));
 
             // Get the coordinate for the Hip from unity
             var hip_coordinates_u = new Vector3(

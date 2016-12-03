@@ -76,7 +76,7 @@ public class MotionModel : MonoBehaviour
                     animator.SetIKRotation(AvatarIKGoal.RightFoot, rightFootObj.rotation);
                     if (rightKneeObj != null)
                     {
-                        animator.SetIKHintPositionWeight(AvatarIKHint.RightKnee, 0.0f);
+                        animator.SetIKHintPositionWeight(AvatarIKHint.RightKnee, 0.05f);
                         animator.SetIKHintPosition(AvatarIKHint.RightKnee, rightKneeObj.position);
                     }
                 }
@@ -88,7 +88,7 @@ public class MotionModel : MonoBehaviour
                     animator.SetIKRotation(AvatarIKGoal.LeftFoot, leftFootObj.rotation);
                     if (leftKneeObj != null)
                     {
-                        animator.SetIKHintPositionWeight(AvatarIKHint.LeftKnee, 0.0f);
+                        animator.SetIKHintPositionWeight(AvatarIKHint.LeftKnee, 0.05f);
                         animator.SetIKHintPosition(AvatarIKHint.LeftKnee, leftKneeObj.position);
                     }
                 }
