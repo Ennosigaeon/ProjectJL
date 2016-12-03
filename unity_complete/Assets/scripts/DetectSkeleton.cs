@@ -34,15 +34,17 @@ public class DetectSkeleton : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        GameObject model_to_move;
         string joint_name;
         float x, y, z;
 
         if (b_src_man == null)
         {
+            Debug.LogError("BodySrcManager not found");
             return;
         }
         bodies = b_src_man.GetData();
+
+       
 
         if (bodies == null)
         {
@@ -66,19 +68,19 @@ public class DetectSkeleton : MonoBehaviour {
 
                 if ( joint_name == "WristRight")
                 {
-                    x = j.Value.Position.X;
+                    x = j.Value.Position.Z;
                     y = j.Value.Position.Y;
-                    z = j.Value.Position.Z;
+                    z = j.Value.Position.X;
 
                     if (x != 0 && y != 0 && y != 0)
                     {
-                        model_to_move = GameObject.Find("cube_hand_right");
+                        
                         Debug.Log("New Wrist Right has position: (" + x + "," + y + "," + z + ")");
                         g_x = x;
                         g_y = y;
                         g_z = z;
-
-                        model_to_move.transform.position = new Vector3(g_x * scalingFactor, g_y * scalingFactor, g_z * scalingFactor);
+                        rightHandObj.transform.position = new Vector3(g_x * scalingFactor, g_y * scalingFactor, g_z * scalingFactor);
+                        //model_to_move.transform.position = new Vector3(g_x * scalingFactor, g_y * scalingFactor, g_z * scalingFactor);
                     }
                     
                 }
