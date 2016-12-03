@@ -31,10 +31,11 @@ public class SlidingWindow
         for (int i = 0; i < SLIDING_WINDOW_SIZE; i++)
         {
             //tmp += sliding_window[(pointer + i) % SLIDING_WINDOW_SIZE] * Mathf.Pow(0.5f, SLIDING_WINDOW_SIZE - i );
-            tmp += sliding_window[(pointer + i) % SLIDING_WINDOW_SIZE];
+            //tmp += sliding_window[(pointer + i) % SLIDING_WINDOW_SIZE];
+            tmp += sliding_window[(pointer + i) % SLIDING_WINDOW_SIZE] * ((2.0f *  i) / (SLIDING_WINDOW_SIZE * (SLIDING_WINDOW_SIZE + 1)));
         }
-        return tmp / SLIDING_WINDOW_SIZE;
-
+        //return tmp / SLIDING_WINDOW_SIZE;
+        return tmp;
     }
 
 

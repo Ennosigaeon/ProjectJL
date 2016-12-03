@@ -60,16 +60,20 @@ public class InteractableObject : MonoBehaviour
 
 
 	void OnCollisionEnter(Collision other){
-		if (other.gameObject == body) {
+        //if (other.gameObject == body) {
+        Debug.Log("IsTouched " + other.gameObject.name + " " + this.gameObject.name);
 			isTouched = true;
-		}
+        //this.GetComponent<BoxCollider>().enabled = false;
+		//}
 	}
 
 	void OnCollisionExit(Collision other){
-		if (other.gameObject == body) {
-			isTouched = false;
-		}
-	}
+        //if (other.gameObject == body) {
+        Debug.Log("Not IsTouched " + other.gameObject.name + " " + this.gameObject.name);
+        isTouched = false;
+        //this.GetComponent<BoxCollider>().enabled = true;
+        //}
+    }
 
     /*	void OnTriggerStay(Collider col)
         {
