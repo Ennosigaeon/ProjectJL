@@ -21,18 +21,18 @@ public class MyoPoseController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        Debug.LogError("Myo Pose Controller start");
+        Debug.Log("Myo Pose Controller start");
         myo = myoGameObject.GetComponent<ThalmicMyo>();
         if (myo == null) {
             myo.Unlock(UnlockType.Hold);
         }
     }
 
-    void OnApplicationQuit() {
-        Debug.Log("Resetting unlock behaviour.");
-        if (myo != null)
-            myo.Unlock(UnlockType.Timed);
-    }
+    //void OnApplicationQuit() {
+    //    Debug.Log("Resetting unlock behaviour.");
+    //    if (myo != null)
+    //        myo.Unlock(UnlockType.Timed);
+    // }
 
     // Update is called once per frame
     void Update() {
