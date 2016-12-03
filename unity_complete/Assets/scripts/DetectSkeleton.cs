@@ -20,7 +20,7 @@ public class DetectSkeleton : MonoBehaviour
     public Transform leftKneeObj = null;
     public Transform rightElbowObj = null;
     public Transform leftElbowObj = null;
-    
+    public Transform headObj = null;
 
     // Default variable for source manager. Takes care of connection to kinect.
     private BodySourceManager b_src_man;
@@ -33,6 +33,10 @@ public class DetectSkeleton : MonoBehaviour
     Vector3 scal_overall_v = Vector3.zero;
     // Use a vector for the initial kinect hip position
     Vector3 initial_hip_k = Vector3.zero;
+    // Initial 
+    Vector3 initial_rotation_k = Vector3.zero;
+
+    private float rot_count = 0.0f;
 
 
     // Use this for initialization
@@ -51,7 +55,8 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.ElbowLeft, leftElbowObj },
                 {JointType.ElbowRight, rightElbowObj },
                 {JointType.KneeLeft, leftKneeObj },
-                {JointType.KneeRight, rightKneeObj }
+                {JointType.KneeRight, rightKneeObj },
+                {JointType.Head, headObj }
             };
 
         sliders = new Dictionary<JointType, SlidingWindow>()
@@ -63,7 +68,8 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.ElbowLeft, new SlidingWindow(sliding_window_size) },
                 {JointType.ElbowRight, new SlidingWindow(sliding_window_size) },
                 {JointType.KneeLeft, new SlidingWindow(sliding_window_size) },
-                {JointType.KneeRight, new SlidingWindow(sliding_window_size) }
+                {JointType.KneeRight, new SlidingWindow(sliding_window_size) },
+                {JointType.Head, new SlidingWindow(sliding_window_size)  }
             };
     }
 
@@ -113,11 +119,16 @@ public class DetectSkeleton : MonoBehaviour
                     (body.Joints[JointType.HipLeft].Position.Y + body.Joints[JointType.HipRight].Position.Y) / 2,
                     (body.Joints[JointType.HipLeft].Position.Z + body.Joints[JointType.HipRight].Position.Z) / 2
                     );
+
+                // NEEDED ?
+                Windows.Kinect.Vector4 tmp = body.JointOrientations[JointType.SpineMid].Orientation;
+                initial_rotation_k = new Quaternion(tmp.X, tmp.Y, tmp.Z, tmp.W).eulerAngles;
             }
             else if (scal_overall_v == Vector3.zero)
             {
                 continue;
             }
+            
             
             // Get the coordinate for the Hip form the kinect
             var hip_coordinates_k = new Vector3(
@@ -130,9 +141,25 @@ public class DetectSkeleton : MonoBehaviour
             if (hip_coordinates_k == Vector3.zero)
             {
                 continue;
-            } // vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k))
+            }
+            // ########################################################################################################################################
+
+            // vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k))
             GameObject.Find("female").transform.position = vec3_multiply(scal_overall_v, (hip_coordinates_k - initial_hip_k));
 
+            Windows.Kinect.Vector4 tmp2 = body.JointOrientations[JointType.SpineMid].Orientation;
+            Vector3 spine_rotation_k = new Quaternion(tmp2.X, tmp2.Y, tmp2.Z, tmp2.W).eulerAngles;
+            Quaternion new_quats = Quaternion.Euler(spine_rotation_k.x ,- ( (spine_rotation_k.y + 180 ) % 360), spine_rotation_k.z);
+
+            
+
+            // MAGIC HERE!!!
+            GameObject.Find("female").transform.rotation = new_quats;
+
+            //rot_count++;
+            //GameObject.Find("female").transform.rotation = Quaternion.Euler(0, rot_count, 0);
+
+            // ########################################################################################################################################
             // Get the coordinate for the Hip from unity
             var hip_coordinates_u = new Vector3(
                 GameObject.Find("hips").transform.position.x,

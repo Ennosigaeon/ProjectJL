@@ -213,7 +213,36 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Armature_SayuriAction_002' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation DOF
+      on avatar to improve retargeting quality.\n\t'spine' has scale animation that
+      will be discarded.\n\nClip 'sayuri_sword' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'spine' has scale animation that will be discarded.\n\t'thumb_01_R'
+      has translation animation that will be discarded.\n\nClip 'sayuri_sword_001'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'spine' has scale
+      animation that will be discarded.\n\t'thumb_01_R' has translation animation
+      that will be discarded.\n\nClip 'sayuri_standing_001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'hips_rotation' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'sayuri_standing_003'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'spine' has scale
+      animation that will be discarded.\n\nClip 'sayuri_standing_004' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation DOF
+      on avatar to improve retargeting quality.\n\t'hips_rotation' has translation
+      animation that will be discarded.\n\t'hips_rotation' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'shoulder_L' has translation
+      animation that will be discarded.\n\t'shoulder_R' has translation animation
+      that will be discarded.\n\nClip 'sayuri_standing_006' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'hips_rotation' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'sayuri_standing_007'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'hips_rotation'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine'
+      has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -222,7 +251,3143 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 199
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_SayuriAction
+      takeName: Armature_SayuriAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_SayuriAction_002
+      takeName: Armature_SayuriAction_002
+      firstFrame: 0
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureAction_001
+      takeName: ArmatureAction_001
+      firstFrame: 92
+      lastFrame: 93
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_sword
+      takeName: sayuri_sword
+      firstFrame: -1
+      lastFrame: 108
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_sword_001
+      takeName: sayuri_sword_001
+      firstFrame: -1
+      lastFrame: 108
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_reset_001
+      takeName: sayuri_reset_001
+      firstFrame: -1
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing
+      takeName: sayuri_standing
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_001
+      takeName: sayuri_standing_001
+      firstFrame: -1
+      lastFrame: 108
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_002
+      takeName: sayuri_standing_002
+      firstFrame: -1
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_003
+      takeName: sayuri_standing_003
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_004
+      takeName: sayuri_standing_004
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_005
+      takeName: sayuri_standing_005
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_006
+      takeName: sayuri_standing_006
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_007
+      takeName: sayuri_standing_007
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: sayuri_standing_008
+      takeName: sayuri_standing_008
+      firstFrame: -1
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_handgun
+        weight: 0
+      - path: Armature_handgun/Bone_0
+        weight: 0
+      - path: Armature_Sayuri
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hip_driver_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/Ankle_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/Ankle_IK_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/hips_rotation/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/neck/head/Auge_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_corrective_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_corrective_R
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Body_controller/hips/spine/chest/shoulder_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: Armature_Sayuri/Base_Controller/Bone
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_L
+        weight: 0
+      - path: Armature_Sayuri/Base_Controller/Bone/Auge_IK_R
+        weight: 0
+      - path: eye_iris
+        weight: 0
+      - path: eye_shadow
+        weight: 0
+      - path: eyeball
+        weight: 0
+      - path: eyes_001
+        weight: 0
+      - path: gloves_old
+        weight: 0
+      - path: Ragdoll_Cords
+        weight: 0
+      - path: Sayuri_001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
