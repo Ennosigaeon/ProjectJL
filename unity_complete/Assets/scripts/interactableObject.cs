@@ -5,6 +5,9 @@ public class InteractableObject : MonoBehaviour
 {
 	public GameObject body = null;
     private bool isTouched = false;
+    private bool isGrabbed = false;
+    private bool isSwungIn = false;
+    private Transform originalPosition;
 
     void OnEnable()
     {
@@ -14,6 +17,7 @@ public class InteractableObject : MonoBehaviour
         MyoPoseController.onRest += doOnRest;
         MyoPoseController.onWaveIn += doOnWaveIn;
         MyoPoseController.onWaveOut += doOnWaveOut;
+        originalPosition = this.transform;
     }
 
     void doOnDoubleTap(GameObject body)
@@ -25,27 +29,15 @@ public class InteractableObject : MonoBehaviour
     void doOnFingerSpread(GameObject body)
     {
         Debug.Log("FingerSpread detected with " + this.gameObject);
-        this.gameObject.transform.SetParent(null);
-		this.gameObject.GetComponent<Rigidbody> ().isKinematic = false;
-
-		tossObject (this.gameObject.GetComponent<Rigidbody> ());
-        //		this.attachedRigidbody.isKinematic = false;
-        //TODO body als richtiges Argument uebergeben
-        //		tossObject(this.attachedRigidbody);
+        resetTransform();
+       
     }
 
     void doOnFist(GameObject body)
     {
         Debug.Log("Fist detected with " + this.gameObject);
-        if (isTouched)
-        {
-			this.gameObject.GetComponent<Rigidbody> ().isKinematic = true;
-			this.gameObject.transform.SetParent(body.gameObject.transform);
-            //			this.attachedRigidbody.isKinematic = true;
-            //			this.gameObject.transform.SetParent(body.gameObject.transform);
-            //TODO hier Element neu erzeugen oder durch andere Geste?
-            Instantiate(this.gameObject);
-        }
+        grabObject();
+
     }
 
     void doOnRest(GameObject body)
@@ -56,14 +48,14 @@ public class InteractableObject : MonoBehaviour
 
     void doOnWaveIn(GameObject body)
     {
+        swingInObject();
         Debug.Log("WaveIn detected with " + this.gameObject);
-
     }
 
     void doOnWaveOut(GameObject body)
     {
+        swingOutObject(body);
         Debug.Log("WaveOut detected with " + this.gameObject);
-
     }
 
 
@@ -103,8 +95,12 @@ public class InteractableObject : MonoBehaviour
         }
     */
 
-    private void tossObject(Rigidbody rigidbody)
+    private void tossObject(GameObject hand)
     {
+        this.gameObject.transform.SetParent(null);
+        this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        this.gameObject.GetComponent<Rigidbody>().velocity = hand.GetComponent<Rigidbody>().velocity;
+        this.gameObject.GetComponent<Rigidbody>().angularVelocity = hand.GetComponent<Rigidbody>().angularVelocity;
         /*		Transform origin = parent.origin ? parent.origin : parent.transform.parent;
                 if(origin != null)
                 {
@@ -116,4 +112,55 @@ public class InteractableObject : MonoBehaviour
                     rigidbody.angularVelocity = device.angularVelocity;
                 }*/
     }
+
+    private void grabObject()
+    {
+        if (isTouched)
+        {
+            isGrabbed = true;
+            this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            this.gameObject.transform.SetParent(body.gameObject.transform);
+            
+        }
+        else
+        {
+            resetStates();
+        }
+    }
+
+    private void swingInObject()
+    {
+        if (isGrabbed)
+        {
+            isSwungIn = true;
+        }
+        else
+        {
+            resetStates();
+        }
+    }
+
+    private void swingOutObject(GameObject hand)
+    {
+        if (isSwungIn)
+        {
+            tossObject(hand);
+        }
+        resetStates();
+    }
+
+    private void resetStates()
+    {
+        isSwungIn = false;
+        isGrabbed = false;
+        isTouched = false;
+    }
+
+    private void resetTransform()
+    {
+        this.transform.position = originalPosition.position;
+        this.transform.rotation = originalPosition.rotation;
+
+    }
+
 }
