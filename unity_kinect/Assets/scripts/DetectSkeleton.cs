@@ -59,11 +59,17 @@ public class DetectSkeleton : MonoBehaviour {
                 continue;
             }
 
+            float scal_avatar = 7.5f;
+            float scal_kinect = body.Joints[JointType.Head].Position.Y - body.Joints[JointType.FootRight].Position.Y;
+
+            Debug.Log("We got scal_avatar with " + scal_avatar + " and scal_kinect with " + scal_kinect);
+            float scal_overall = scal_avatar / scal_kinect;
+            // - 
             var hip_x = (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2;
             var hip_y = (body.Joints[JointType.HipLeft].Position.Y + body.Joints[JointType.HipRight].Position.Y) / 2;
             var hip_z = (body.Joints[JointType.HipLeft].Position.Z + body.Joints[JointType.HipRight].Position.Z) / 2;
 
-
+            Debug.Log(GameObject.Find("head").transform.position);
             foreach (var j in body.Joints)
             {
                 
@@ -80,11 +86,11 @@ public class DetectSkeleton : MonoBehaviour {
                     {
                         
                         
-                        g_x = x;
-                        g_y = y;
-                        g_z = z;
-                        rightHandObj.transform.position = new Vector3(g_x - hip_x, g_y - hip_y, -1* (g_z - hip_z));
-                        Debug.Log("New Wrist Right has position: (" + (g_x - hip_x) + "," + (g_y - hip_y) + "," + (-1 * (g_z - hip_z)) + ")");
+                        g_x = (GameObject.Find("hips").transform.position.x + scal_overall * (x - hip_x));
+                        g_y = (GameObject.Find("hips").transform.position.y + scal_overall * (y - hip_y)); ;
+                        g_z = (GameObject.Find("hips").transform.position.z + (-scal_overall) * (z - hip_z)); ;
+                        rightHandObj.transform.position = new Vector3(g_x, g_y, g_z);
+                        Debug.Log("New Wrist Right has position: (" + (g_x) + "," + (g_y) + "," + (g_z ) + ")");
                         //model_to_move.transform.position = new Vector3(g_x * scalingFactor, g_y * scalingFactor, g_z * scalingFactor);
                     }
                     
