@@ -6,6 +6,7 @@ public class MyoPoseController : MonoBehaviour {
 
     public GameObject myoGameObject = null;
     public KeyCode resetKey = KeyCode.Space;
+    public GameObject target = null;
 
 	//==
 	public delegate void MyoAction(GameObject g);
@@ -47,34 +48,34 @@ public class MyoPoseController : MonoBehaviour {
 			case Pose.DoubleTap:
 			//onDoubleTap ();
 				if (onDoubleTap != null) {
-					onDoubleTap(this.gameObject);
+					onDoubleTap(this.target);
 				}
             	break;
            	case Pose.FingersSpread:
             	if (onFingerSpread != null) {
-					onFingerSpread(this.gameObject);
+					onFingerSpread(this.target);
 				}
 				break;
             case Pose.Fist:
 				if (onFist != null) {
-					onFist(this.gameObject);
+					onFist(this.target);
 				}
             	break;
             case Pose.Rest:
 				if (onRest != null) {
-					onRest(this.gameObject);
+					onRest(this.target);
 				}
             	break;
             case Pose.Unknown:
             	break;
             case Pose.WaveIn:
 				if (onWaveIn != null) {
-                    onWaveIn(this.gameObject);
+                    onWaveIn(this.target);
 				}
                 break;
             case Pose.WaveOut:
 				if (onWaveOut != null) {
-					onWaveOut(this.gameObject);
+					onWaveOut(this.target);
 				}
             	break;
         }

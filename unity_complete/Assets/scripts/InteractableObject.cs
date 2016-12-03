@@ -4,10 +4,10 @@ using System.Collections;
 public class InteractableObject : MonoBehaviour
 {
 	public GameObject body = null;
-    private bool isTouched = false;
     private bool isGrabbed = false;
-    private bool isSwungIn = false;
     private Transform originalPosition;
+    private int lastTouch = 0;
+    private int lastSwungIn = 0;
 
     void OnEnable()
     {
@@ -48,20 +48,12 @@ public class InteractableObject : MonoBehaviour
         swingOutObject(body);
     }
 
-
 	void OnCollisionEnter(Collision other){
-        //if (other.gameObject == body) {
-            Debug.Log("Touch");
-			isTouched = true;
-        grabObject();
-		//}
+        Debug.Log("Touch");
+        lastTouch = Time.frameCount;
 	}
 
 	void OnCollisionExit(Collision other){
-		//if (other.gameObject == body) {
-			isTouched = false;
-            Debug.Log("Untouch");
-        //}
     }
 
     /*	void OnTriggerStay(Collider col)
@@ -88,12 +80,14 @@ public class InteractableObject : MonoBehaviour
         }
     */
 
-    private void tossObject(GameObject hand)
+    private void releaseObject(GameObject hand)
     {
+        Debug.Log("Releassing object");
         this.gameObject.transform.SetParent(null);
         this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         this.gameObject.GetComponent<Rigidbody>().velocity = hand.GetComponent<Rigidbody>().velocity;
         this.gameObject.GetComponent<Rigidbody>().angularVelocity = hand.GetComponent<Rigidbody>().angularVelocity;
+        isGrabbed = false;
         /*		Transform origin = parent.origin ? parent.origin : parent.transform.parent;
                 if(origin != null)
                 {
@@ -108,7 +102,7 @@ public class InteractableObject : MonoBehaviour
 
     private void grabObject()
     {
-        if (isTouched)
+        if (Time.frameCount - lastTouch < 20)
         {
             isGrabbed = true;
             Debug.Log("Grabbed object");
@@ -116,38 +110,22 @@ public class InteractableObject : MonoBehaviour
             this.gameObject.transform.SetParent(body.gameObject.transform);
             
         }
-        else
-        {
-            resetStates();
-        }
     }
 
     private void swingInObject()
     {
         if (isGrabbed)
         {
-            isSwungIn = true;
-        }
-        else
-        {
-            resetStates();
+            lastSwungIn = Time.frameCount;
         }
     }
 
     private void swingOutObject(GameObject hand)
     {
-        if (isSwungIn)
+        if (Time.frameCount - lastSwungIn < 200)
         {
-            tossObject(hand);
+            releaseObject(hand);
         }
-        resetStates();
-    }
-
-    private void resetStates()
-    {
-        isSwungIn = false;
-        isGrabbed = false;
-        isTouched = false;
     }
 
     private void resetTransform()
