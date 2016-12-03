@@ -2,12 +2,9 @@
 using Pose = Thalmic.Myo.Pose;
 using UnlockType = Thalmic.Myo.UnlockType;
 
-public abstract class MyoPoseController : MonoBehaviour {
+public class MyoPoseController : MonoBehaviour {
 
     public GameObject myoGameObject = null;
-    public float strechFactor = 1f;
-    public float minStrechFactor = 0.5f;
-    public float maxStrechFactor = 2.5f;
     public KeyCode resetKey = KeyCode.Space;
 
 	//==
@@ -18,11 +15,6 @@ public abstract class MyoPoseController : MonoBehaviour {
 	public static event MyoAction onRest;
 	public static event MyoAction onWaveIn;
 	public static event MyoAction onWaveOut;
-
-
-    public float speed = 1f;
-    public bool updateOnChange = false;
-    public float maxOffset = 2f;
 
     private ThalmicMyo myo = null;
     private Pose lastPose = Pose.Unknown;
@@ -44,11 +36,10 @@ public abstract class MyoPoseController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         Pose pose = myo == null ? Pose.Unknown : myo.pose;
-        if (pose == lastPose && updateOnChange)
+        if (pose == lastPose)
             return;
 
-        if (pose != lastPose)
-            Debug.LogError("Pose: " + pose.ToString());
+        Debug.LogError("Pose: " + pose.ToString());
         lastPose = pose;
 
         switch (pose) {
