@@ -16,6 +16,10 @@ public class DetectSkeleton : MonoBehaviour
     public Transform leftHandObj = null;
     public Transform leftFootObj = null;
     public Transform rightFootObj = null;
+    public Transform rightKneeObj = null;
+    public Transform leftKneeObj = null;
+    public Transform rightElbowObj = null;
+    public Transform leftElbowObj = null;
 
     // Default variable for source manager. Takes care of connection to kinect.
     private BodySourceManager b_src_man;
@@ -44,7 +48,11 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.WristRight, rightHandObj },
                 {JointType.WristLeft, leftHandObj },
                 {JointType.AnkleRight, rightFootObj },
-                {JointType.AnkleLeft, leftFootObj }
+                {JointType.AnkleLeft, leftFootObj },
+                {JointType.ElbowLeft, leftElbowObj },
+                {JointType.ElbowRight, rightElbowObj },
+                {JointType.KneeLeft, leftKneeObj },
+                {JointType.KneeRight, rightKneeObj }
             };
 
         sliders = new Dictionary<JointType, SlidingWindow>()
@@ -52,7 +60,11 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.WristRight, new SlidingWindow(sliding_window_size) },
                 {JointType.WristLeft, new SlidingWindow(sliding_window_size) },
                 {JointType.AnkleRight, new SlidingWindow(sliding_window_size) },
-                {JointType.AnkleLeft, new SlidingWindow(sliding_window_size) }
+                {JointType.AnkleLeft, new SlidingWindow(sliding_window_size) },
+                {JointType.ElbowLeft, new SlidingWindow(sliding_window_size) },
+                {JointType.ElbowRight, new SlidingWindow(sliding_window_size) },
+                {JointType.KneeLeft, new SlidingWindow(sliding_window_size) },
+                {JointType.KneeRight, new SlidingWindow(sliding_window_size) }
             };
 
         sliding_window = new SlidingWindow(sliding_window_size);
@@ -124,8 +136,6 @@ public class DetectSkeleton : MonoBehaviour
                 continue;
             }
             GameObject.Find("female").transform.position =  hip_coordinates_k - initial_hip_k;
-            Debug.Log(hip_coordinates_k - initial_hip_k);
-            Debug.Log("Pure kinrect: " + hip_coordinates_k);
 
             // Get the coordinate for the Hip from unity
             var hip_coordinates_u = new Vector3(
