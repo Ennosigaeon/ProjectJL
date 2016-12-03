@@ -32,8 +32,6 @@ public class DetectSkeleton : MonoBehaviour
     Vector3 scal_overall_v = Vector3.zero;
     // Use a vector for the initial kinect hip position
     Vector3 initial_hip_k = Vector3.zero;
-    // Globla Array to hold sliding window frame.
-    private SlidingWindow sliding_window;
 
 
     // Use this for initialization
@@ -66,9 +64,6 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.KneeLeft, new SlidingWindow(sliding_window_size) },
                 {JointType.KneeRight, new SlidingWindow(sliding_window_size) }
             };
-
-        sliding_window = new SlidingWindow(sliding_window_size);
-
     }
 
 

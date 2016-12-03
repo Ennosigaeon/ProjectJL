@@ -14,6 +14,12 @@ public class MotionModel : MonoBehaviour
     public Transform leftHandObj = null;
     public Transform leftFootObj = null;
     public Transform rightFootObj = null;
+
+    public Transform rightKneeObj = null;
+    public Transform leftKneeObj = null;
+    public Transform rightElbowObj = null;
+    public Transform leftElbowObj = null;
+
     public Transform lookObj = null;
     void Start()
     {
@@ -38,12 +44,17 @@ public class MotionModel : MonoBehaviour
                 }
 
                 // Set the right hand target position and rotation, if one has been assigned
-                if (leftHandObj != null)
+                if (rightHandObj != null)
                 {
                     animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
                     animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1);
                     animator.SetIKPosition(AvatarIKGoal.RightHand, rightHandObj.position);
                     animator.SetIKRotation(AvatarIKGoal.RightHand, rightHandObj.rotation);
+                    if ( rightElbowObj != null)
+                    {
+                        animator.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 0.5f);
+                        animator.SetIKHintPosition(AvatarIKHint.RightElbow, rightElbowObj.position);
+                    }
                 }
                 if (leftHandObj != null)
                 {
@@ -51,6 +62,11 @@ public class MotionModel : MonoBehaviour
                     animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1);
                     animator.SetIKPosition(AvatarIKGoal.LeftHand, leftHandObj.position);
                     animator.SetIKRotation(AvatarIKGoal.LeftHand, leftHandObj.rotation);
+                    if (leftElbowObj != null)
+                    {
+                        animator.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 0.5f);
+                        animator.SetIKHintPosition(AvatarIKHint.LeftElbow, leftElbowObj.position);
+                    }
                 }
                 if (rightFootObj != null)
                 {
@@ -58,6 +74,11 @@ public class MotionModel : MonoBehaviour
                     animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, 1);
                     animator.SetIKPosition(AvatarIKGoal.RightFoot, rightFootObj.position);
                     animator.SetIKRotation(AvatarIKGoal.RightFoot, rightFootObj.rotation);
+                    if (rightKneeObj != null)
+                    {
+                        animator.SetIKHintPositionWeight(AvatarIKHint.RightKnee, 0.0f);
+                        animator.SetIKHintPosition(AvatarIKHint.RightKnee, rightKneeObj.position);
+                    }
                 }
                 if (leftFootObj != null)
                 {
@@ -65,6 +86,11 @@ public class MotionModel : MonoBehaviour
                     animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 1);
                     animator.SetIKPosition(AvatarIKGoal.LeftFoot, leftFootObj.position);
                     animator.SetIKRotation(AvatarIKGoal.LeftFoot, leftFootObj.rotation);
+                    if (leftKneeObj != null)
+                    {
+                        animator.SetIKHintPositionWeight(AvatarIKHint.LeftKnee, 0.0f);
+                        animator.SetIKHintPosition(AvatarIKHint.LeftKnee, leftKneeObj.position);
+                    }
                 }
             }
 
