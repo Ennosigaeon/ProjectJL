@@ -2,6 +2,7 @@
 using System.Collections;
 using Windows.Kinect;
 using System;
+using System.Collections.Generic;
 
 
 public class DetectSkeleton : MonoBehaviour {
@@ -21,21 +22,28 @@ public class DetectSkeleton : MonoBehaviour {
     // Field for all bodies. Gets field by each frame of the kinect.
     private Body[] bodies;
 
+    private Dictionary<JointType,Transform> descriptors;
+
     // Use this for initialization
     void Start () {
 
         // get the default body source manager
         b_src_man = BodySrcManager.GetComponent<BodySourceManager>();
 
-    }
+        descriptors = new Dictionary<JointType, Transform>()
+            {
+                {JointType.WristRight, rightHandObj },
+                {JointType.WristLeft, leftHandObj },
+                {JointType.FootRight, rightFootObj },
+                {JointType.FootLeft, leftFootObj }
+            };
 
-    float g_x = 0, g_y = 0, g_z = 0;
+    }
+    
 
     // Update is called once per frame
     void Update()
     {
-        string joint_name;
-        float x, y, z;
 
         if (b_src_man == null)
         {
@@ -43,8 +51,6 @@ public class DetectSkeleton : MonoBehaviour {
             return;
         }
         bodies = b_src_man.GetData();
-
-       
 
         if (bodies == null)
         {
@@ -58,49 +64,57 @@ public class DetectSkeleton : MonoBehaviour {
             {
                 continue;
             }
-
+            // MAGIC NUMBER
             float scal_avatar = 7.5f;
             float scal_kinect = body.Joints[JointType.Head].Position.Y - body.Joints[JointType.FootRight].Position.Y;
 
-            Debug.Log("We got scal_avatar with " + scal_avatar + " and scal_kinect with " + scal_kinect);
+            // Compute scale from kinect coordiante system to unity coordiante system.
             float scal_overall = scal_avatar / scal_kinect;
-            // - 
-            var hip_x = (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2;
-            var hip_y = (body.Joints[JointType.HipLeft].Position.Y + body.Joints[JointType.HipRight].Position.Y) / 2;
-            var hip_z = (body.Joints[JointType.HipLeft].Position.Z + body.Joints[JointType.HipRight].Position.Z) / 2;
-
-            Debug.Log(GameObject.Find("head").transform.position);
-            foreach (var j in body.Joints)
+            Vector3 scal_overall_v = new Vector3( scal_overall, scal_overall, -scal_overall);
+            // Get the coordinate for the Hip form the kinect
+            var hip_coordinates_k = new Vector3(
+                (body.Joints[JointType.HipLeft].Position.X + body.Joints[JointType.HipRight].Position.X) / 2,
+                (body.Joints[JointType.HipLeft].Position.Y + body.Joints[JointType.HipRight].Position.Y) / 2,
+                (body.Joints[JointType.HipLeft].Position.Z + body.Joints[JointType.HipRight].Position.Z) / 2
+                );
+            // Get the coordinate for the Hip from unity
+            var hip_coordinates_u = new Vector3(
+                GameObject.Find("hips").transform.position.x,
+                GameObject.Find("hips").transform.position.y,
+                GameObject.Find("hips").transform.position.z
+                );
+            // Iterate over the dictionary
+            foreach (KeyValuePair<JointType, Transform> pair in descriptors)
             {
-                
-                //Debug.Log(j.Key.ToString());
-                joint_name = j.Key.ToString();
-
-                if ( joint_name == "WristRight")
+                // get the current position from the kinect
+                var p_k = body.Joints[pair.Key].Position;
+                var coordinates_k = new Vector3(p_k.X, p_k.Y, p_k.Z);
+                // if there are no new frames, continue
+                if ( coordinates_k == Vector3.zero)
                 {
-                    x = j.Value.Position.X;
-                    y = j.Value.Position.Y;
-                    z = j.Value.Position.Z;
-
-                    if (x != 0 && y != 0 && y != 0)
-                    {
-                        
-                        
-                        g_x = (GameObject.Find("hips").transform.position.x + scal_overall * (x - hip_x));
-                        g_y = (GameObject.Find("hips").transform.position.y + scal_overall * (y - hip_y)); ;
-                        g_z = (GameObject.Find("hips").transform.position.z + (-scal_overall) * (z - hip_z)); ;
-                        rightHandObj.transform.position = new Vector3(g_x, g_y, g_z);
-                        Debug.Log("New Wrist Right has position: (" + (g_x) + "," + (g_y) + "," + (g_z ) + ")");
-                        //model_to_move.transform.position = new Vector3(g_x * scalingFactor, g_y * scalingFactor, g_z * scalingFactor);
-                    }
-                    
+                    continue;
+                } 
+                else
+                {
+                    // THIS IS WHERE THE MAGIC HAPPENS!
+                    /*
+                     * We simply use the body scale from unity and map the distance vector from kinect_hip to kinect_hand positions
+                     * and add this vector to the unity hip position.
+                     * Easy as fuck.
+                     */ 
+                    pair.Value.transform.position = hip_coordinates_u + vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k));
                 }
-                // FootLeft, FootRight
-                // WristLeft, WristRight
-                // HipLeft, HipRight --> Mittelpunkt
+
+
             }
-
-
         }
+    }
+
+    private Vector3 vec3_multiply(Vector3 one, Vector3 two)
+    {
+        return new Vector3(
+            one.x * two.x,
+            one.y * two.y,
+            one.z * two.z);
     }
 }
