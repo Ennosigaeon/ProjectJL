@@ -10,6 +10,7 @@ public class DetectSkeleton : MonoBehaviour
 
     public GameObject BodySrcManager;
 
+    public int slider_head_size;
     public int sliding_window_size;
 
     public Transform rightHandObj = null;
@@ -20,6 +21,7 @@ public class DetectSkeleton : MonoBehaviour
     public Transform leftKneeObj = null;
     public Transform rightElbowObj = null;
     public Transform leftElbowObj = null;
+    public Transform headKameraObj = null;
 
     // Default variable for source manager. Takes care of connection to kinect.
     private BodySourceManager b_src_man;
@@ -50,7 +52,8 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.ElbowLeft, leftElbowObj },
                 {JointType.ElbowRight, rightElbowObj },
                 {JointType.KneeLeft, leftKneeObj },
-                {JointType.KneeRight, rightKneeObj }
+                {JointType.KneeRight, rightKneeObj },
+                {JointType.Head, headKameraObj }
             };
 
         sliders = new Dictionary<JointType, SlidingWindow>()
@@ -62,7 +65,8 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.ElbowLeft, new SlidingWindow(sliding_window_size) },
                 {JointType.ElbowRight, new SlidingWindow(sliding_window_size) },
                 {JointType.KneeLeft, new SlidingWindow(sliding_window_size) },
-                {JointType.KneeRight, new SlidingWindow(sliding_window_size) }
+                {JointType.KneeRight, new SlidingWindow(sliding_window_size) },
+                {JointType.Head, new SlidingWindow(slider_head_size) }
             };
     }
 
@@ -143,6 +147,8 @@ public class DetectSkeleton : MonoBehaviour
             {
                 // get the current position from the kinect
                 var p_k = body.Joints[pair.Key].Position;
+
+                
                 var coordinates_k = new Vector3(p_k.X, p_k.Y, p_k.Z);
                 // if there are no new frames, continue
                 if (coordinates_k == Vector3.zero)
