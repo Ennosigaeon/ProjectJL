@@ -5,7 +5,10 @@ public class MyoOrientationController : MonoBehaviour
 {
 
     public GameObject myoGameObject = null;
+    public GameObject target = null;
+    public int scale = 2;
     public KeyCode resetKey = KeyCode.Space;
+
     private ThalmicMyo myo = null;
     private Quaternion antiYaw = Quaternion.identity;
     private float referenceRoll = 0.0f;
@@ -24,12 +27,12 @@ public class MyoOrientationController : MonoBehaviour
             reset();
 
         Quaternion orientation = getOrientation();
-        processOrientation(orientation);
-    }
-
-    void processOrientation(Quaternion orientation)
-    {
-        transform.rotation = orientation;
+        if (target != null)
+        {
+            Vector3 currentAngels = target.transform.rotation.eulerAngles;
+            Vector3 angels = orientation.eulerAngles;
+            target.transform.rotation = Quaternion.Euler(currentAngels.x, currentAngels.y, angels.z);
+        }
     }
 
     private void reset()
@@ -55,8 +58,7 @@ public class MyoOrientationController : MonoBehaviour
             relativeRoll -= 360.0f;
         if (relativeRoll < -180.0f)
             relativeRoll += 360.0f;
-
-        Debug.LogError(relativeRoll);
+        relativeRoll *= scale;
 
         Quaternion antiRoll = Quaternion.AngleAxis(relativeRoll, myo.transform.forward);
         return antiYaw * antiRoll * Quaternion.LookRotation(myo.transform.forward);

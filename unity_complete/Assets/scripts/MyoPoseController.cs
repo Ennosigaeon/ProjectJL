@@ -30,7 +30,8 @@ public class MyoPoseController : MonoBehaviour {
 
     void OnApplicationQuit() {
         Debug.Log("Resetting unlock behaviour.");
-        myo.Unlock(UnlockType.Timed);
+        if (myo != null)
+            myo.Unlock(UnlockType.Timed);
     }
 
     // Update is called once per frame
@@ -39,7 +40,7 @@ public class MyoPoseController : MonoBehaviour {
         if (pose == lastPose)
             return;
 
-        Debug.LogError("Pose: " + pose.ToString());
+        Debug.Log("Pose: " + pose.ToString());
         lastPose = pose;
 
         switch (pose) {
