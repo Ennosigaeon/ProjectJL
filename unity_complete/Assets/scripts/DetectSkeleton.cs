@@ -152,9 +152,17 @@ public class DetectSkeleton : MonoBehaviour
             }
             // ########################################################################################################################################
 
+            
+
             // vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k))
             hip_slider.push(vec3_multiply(scal_overall_v, (hip_coordinates_k - initial_hip_k)));
             GameObject.Find("female").transform.position = hip_slider.pop();
+            //var tmp_pos = Terrain.activeTerrain.SampleHeight(GameObject.Find("female").transform.position);
+
+            Vector3 tmp_pos = new Vector3(GameObject.Find("female").transform.position.x, GameObject.Find("female").transform.position.y + 4.65f + Terrain.activeTerrain.SampleHeight(GameObject.Find("female").transform.position), GameObject.Find("female").transform.position.z);
+            GameObject.Find("female").transform.position = tmp_pos;
+
+            
 
             Windows.Kinect.Vector4 tmp2 = body.JointOrientations[JointType.SpineMid].Orientation;
             Vector3 spine_rotation_k = new Quaternion(tmp2.X, tmp2.Y, tmp2.Z, tmp2.W).eulerAngles;
