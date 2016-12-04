@@ -53,12 +53,14 @@ public class MyoPoseController : MonoBehaviour {
             	break;
            	case Pose.FingersSpread:
             	if (onFingerSpread != null) {
-					onFingerSpread(this.target);
+                    GameObject.Find("female").GetComponent<Animator>().Play("open_right_hand");
+                    onFingerSpread(this.target);
 				}
 				break;
             case Pose.Fist:
 				if (onFist != null) {
-					onFist(this.target);
+                    GameObject.Find("female").GetComponent<Animator>().Play("close_right_hand");
+                    onFist(this.target);
 				}
             	break;
             case Pose.Rest:

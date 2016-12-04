@@ -34,6 +34,7 @@ public class InteractableObject : MonoBehaviour
 
     void doOnFist(GameObject body)
     {
+        
         grabObject();
     }
 
@@ -54,6 +55,7 @@ public class InteractableObject : MonoBehaviour
 	void OnCollisionEnter(Collision other){
         Debug.Log("Touch");
         lastTouch = Time.frameCount;
+        
 	}
 
 	void OnCollisionExit(Collision other){

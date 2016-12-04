@@ -36,6 +36,9 @@ public class DetectSkeleton : MonoBehaviour
     // Initial 
     Vector3 initial_rotation_k = Vector3.zero;
 
+    private SlidingWindow hip_slider;
+    private SlidingWindow rotation_slider;
+
     private float rot_count = 0.0f;
 
 
@@ -45,6 +48,8 @@ public class DetectSkeleton : MonoBehaviour
 
         // get the default body source manager
         b_src_man = BodySrcManager.GetComponent<BodySourceManager>();
+        hip_slider = new SlidingWindow(sliding_window_size);
+        rotation_slider = new SlidingWindow(1);
 
         descriptors = new Dictionary<JointType, Transform>()
             {
@@ -71,6 +76,9 @@ public class DetectSkeleton : MonoBehaviour
                 {JointType.KneeRight, new SlidingWindow(sliding_window_size) },
                 {JointType.Head, new SlidingWindow(sliding_window_size)  }
             };
+
+
+        
     }
 
 
@@ -145,11 +153,14 @@ public class DetectSkeleton : MonoBehaviour
             // ########################################################################################################################################
 
             // vec3_multiply(scal_overall_v, (coordinates_k - hip_coordinates_k))
-            GameObject.Find("female").transform.position = vec3_multiply(scal_overall_v, (hip_coordinates_k - initial_hip_k));
+            hip_slider.push(vec3_multiply(scal_overall_v, (hip_coordinates_k - initial_hip_k)));
+            GameObject.Find("female").transform.position = hip_slider.pop();
 
             Windows.Kinect.Vector4 tmp2 = body.JointOrientations[JointType.SpineMid].Orientation;
             Vector3 spine_rotation_k = new Quaternion(tmp2.X, tmp2.Y, tmp2.Z, tmp2.W).eulerAngles;
-            Quaternion new_quats = Quaternion.Euler(spine_rotation_k.x ,- ( (spine_rotation_k.y + 180 ) % 360), spine_rotation_k.z);
+            rotation_slider.push(new Vector3(spine_rotation_k.x, -((spine_rotation_k.y + 180) % 360), spine_rotation_k.z));
+
+            Quaternion new_quats = Quaternion.Euler(rotation_slider.pop());
 
             
 
